@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+      <title>gesh-Games הציפור המעופפת</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flappyBird.css" />
+
+  </head>
+  <body>
+    <main id="main">
+      <p class="offscreen"></p>
+      <!-- <iframe src="shared/header.html" width="100%" style="border:none;" ></iframe> -->
+      <header id="getting-header" class="dash-header">
+        <div class="dash-header__container dash-header__container--small">
+          <a class="logo-link" href="app.html"
+            ><h1 class="dash-header__title">geshGames</h1></a
+          >
+          <div class="dash-header-filter"></div>
+          <nav class="dash-header__nav">
+            <a  href="app.html" id="games-btn" class="icon-button" title="Games">
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+            </a>
+            <a  href="minesweeper.html" id="minesweeper-btn" class="icon-button" title="MineSweeper">
+              <i class="fa fa-th" aria-hidden="true"></i>
+            </a>
+            <a  href="flappyBird.html" id="bird-btn" class="icon-button" title="Flappy Bird">
+              <i class="fa-solid fa-kiwi-bird"></i>
+            </a>
+            <a  href="profile.html" id="profile-btn" class="icon-button" title="Profile">
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+
+           
+
+            <!-- <button class="icon-button" title="Tasks">
+                  <i class="fa-solid fa-user"></i>
+              </button>
+              <button class="icon-button" title="Grades">
+              </button>
+              <button class="icon-button" title="Users">
+              </button>
+              <button class="icon-button" title="Profile">
+              </button> -->
+            <button id="logout-btn" class="icon-button" title="Logout">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+     
+      <div class="dash-container">
+        <canvas id="canvas1"></canvas>
+      </div>
+      <footer class="dash-footer">
+        <a href="app.html"  class="dash-footer__button icon-button" >
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+       
+        <p>משתמש: 
+          <span class="fill_user"></span>
+        </p>
+      </footer>
+    </main>
+    <script src="scripts/store.js" ></script>
+    <script src="scripts/main.js" ></script>
+    <script src="scripts/pages/bird.js"></script>
+    <script src="scripts/pages/particles.js"></script>
+    <script src="scripts/pages/obstacles.js"></script>
+    <script src="scripts/pages/flappyBird.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gesh-Games הרשמה</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="main">
+      <section class="public">
+        <header>
+          <h1>הרשמה </h1>
+        </header>
+        <main  class="login">
+          <form id="register-form" class="form">
+            <div class="errmsg hide" id="err"></div>
+            <label for="username">שם משתמש:</label
+            ><input
+              class="form__input"
+              type="text"
+              id="username"
+              autocomplete="off"
+              required=""
+              value=""
+            /><label for="password">סיסמא:</label
+            ><input
+              class="form__input"
+              type="password"
+              id="password"
+              required=""
+              value=""
+            />                    
+            <label for="confirm_password">אימות סיסמא:</label
+                ><input
+                  class="form__input"
+                  type="password"
+                  id="confirm_password"
+                  required=""
+                  value=""
+                />
+                <ul>
+                  <li>סיסמא מכילה לפחות 8 תווים</li>
+                  <li>על הסיסמא להכיל אותיות גדולות</li>
+                  <li>על הסיסמא להכיל אותיות קטנות</li>
+                  <li>על הסיסמא להכיל  מספרים</li>
+                  <li>על הסיסמא להכיל לפחות תו אחד מיוחד</li>
+                
+                </ul>
+                <label for="remember" class="form__persist"
+                ><input
+                  type="checkbox"
+                  class="form__checkbox"
+                  id="remember"
+                  name="remember"
+                  checked=""
+                />זכור אותי</label >
+            <button class="form__submit-button">הירשם</button>
+          </form>
+        </main>
+        <footer class="public__footer">
+          <a href="login.html">כניסת משתמשים</a>
+          <a href="register.html">משתמש חדש </a>
+          <p>©2023 גאולה שושן</p>
+        </footer>
+      </section>
+    </div>
+
+    <script src="scripts/store.js" ></script>
+    <script src="scripts/pages/register.js" ></script>
+
+  </body>
+</html>

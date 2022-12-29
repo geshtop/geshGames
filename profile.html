@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gesh-Games פרופיל אישי</title>
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="main">
+      <section class="public">
+        <header id="getting-header" class="dash-header">
+          <div class="dash-header__container dash-header__container--small">
+            <a class="logo-link" href="app.html"
+              ><h1 class="dash-header__title">geshGames</h1></a
+            >
+            <div class="dash-header-filter"></div>
+            <nav class="dash-header__nav">
+              <a  href="app.html" id="games-btn" class="icon-button" title="Games">
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+              </a>
+              <a  href="minesweeper.html" id="minesweeper-btn" class="icon-button" title="MineSweeper">
+                <i class="fa fa-th" aria-hidden="true"></i>
+              </a>
+              <a  href="flappyBird.html" id="bird-btn" class="icon-button" title="Flappy Bird">
+                <i class="fa-solid fa-kiwi-bird"></i>
+              </a>
+              <a  href="profile.html" id="profile-btn" class="icon-button" title="Profile">
+                <i class="fa-solid fa-user"></i>
+              </a>
+  
+  
+  
+             
+  
+              <!-- <button class="icon-button" title="Tasks">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button" title="Grades">
+                </button>
+                <button class="icon-button" title="Users">
+                </button>
+                <button class="icon-button" title="Profile">
+                </button> -->
+              <button id="logout-btn" class="icon-button" title="Logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </button>
+            </nav>
+          </div>
+        </header>
+        <main class="profile-page">
+          <h1>פרופיל אישי</h1>
+          <form class="form" id="profile-form">
+            <div class="errmsg hide" id="err"></div>
+            <label for="username">שם משתמש:</label
+            ><input
+              disabled
+              readonly
+              class="form__input"
+              type="text"
+              id="username"
+              autocomplete="off"
+              required=""
+              value=""
+            /><label for="password">סיסמא:</label
+            ><input
+              class="form__input"
+              type="password"
+              id="password"
+              required=""
+              value=""
+            />
+            <h2>שולה המוקשים</h2>
+            <label for="m_level">רמת קושי:</label
+              >
+              <select name="m_level" id="m_level"  class="form__input">
+                <option value="1">רמה 1 (6X6)</option>
+                <option value="2">רמה 2 (10X10)</option>
+                <option value="3">רמה 3 (15X15)</option>
+
+              </select>
+
+              <h2> הציפור המעופפת</h2>
+              <label for="b_level">רמת קושי:</label
+                >
+                <select  class="form__input" name="b_level" id="b_level">
+                  <option value="1">רמה 1 </option>
+                  <option value="2">רמה 2 </option>
+                  <option value="3">רמה 3 </option>
+                </select>
+                <legend>רקע</legend>
+                <div class="background">
+                 
+                  <label for="bg1">
+                    <span>
+                      <input type="radio" name="bg" value="1" id="bg1" /> חורפי
+                    </span>
+                    <img src="img/BG1.png" />
+                  
+                  
+                  
+                  </label>
+                  <label for="bg2">
+                    <span>
+                      <input type="radio"  name="bg" value="2" id="bg2" /> קייצי
+                    </span>
+                    <img src="img/BG2.png" />
+                   
+                  
+                   
+                  </label>
+
+                  <label for="bg3">
+                    <span>
+                      <input type="radio" name="bg" value="3" id="bg3" /> סתוי
+                    </span>
+                    <img src="img/BG3.png" />
+                    
+                    
+                   
+                  </label>
+                  <label for="bg4">
+                    <span>
+                      <input type="radio" name="bg" value="4" id="bg4" /> אביבי
+                    </span>
+                    <img src="img/BG4.png" />
+                   
+                 
+                   
+                  </label>
+
+
+                </div>
+                <legend>מעופף</legend>
+
+                <div class="background">
+                  <label for="bird1">
+                    <span>
+                      <input type="radio" name="bird" value="1" id="bird1" />
+                    </span>
+                    <img src="img/temp/frame-1.png" />
+
+                  </label>
+                  <label for="bird2">
+                    <span>
+                      <input type="radio" name="bird" value="2" id="bird2" />
+                    </span>
+                    <img src="img/temp/BirdB_0000_Capa-1.png" />
+                   
+                  </label>
+
+                  <label for="bird3">
+                    <span>
+                      <input type="radio" name="bird" value="3" id="bird3" /> 
+                    </span>
+                    <img src="img/temp/BIG_0000_Capa-1.png" />
+                  </label>
+                
+
+
+                </div>
+                <label for="debugMode" class="form__persist"
+              ><input
+                type="checkbox"
+                class="form__checkbox"
+                id="debugMode"
+                value="1"
+              />מצב DEBUG</label
+            >
+            
+
+            <button class="form__submit-button">עדכון פרופיל אישי </button>
+            
+          </form>
+        </main>
+        <footer class="dash-footer">
+          <a href="app.html"  class="dash-footer__button icon-button" >
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+         
+          <p>משתמש: 
+            <span class="fill_user"></span>
+          </p>
+        </footer>
+      </section>
+    </div>
+    <script src="scripts/store.js" ></script>
+    <script src="scripts/main.js" ></script>
+    <script src="scripts/pages/profile.js" ></script>
+
+  </body>
+</html>

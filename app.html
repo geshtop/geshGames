@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>gesh-Games יישומים</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <main id="main">
+      <p class="offscreen"></p>
+      <!-- <iframe src="shared/header.html" width="100%" style="border:none;" ></iframe> -->
+      <header id="getting-header" class="dash-header">
+        <div class="dash-header__container dash-header__container--small">
+          <a class="logo-link" href="app.html"
+            ><h1 class="dash-header__title">geshGames</h1></a
+          >
+          <div class="dash-header-filter"></div>
+          <nav class="dash-header__nav">
+            <a href="app.html" id="games-btn" class="icon-button" title="Games">
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+            </a>
+            <a
+              href="minesweeper.html"
+              id="minesweeper-btn"
+              class="icon-button"
+              title="MineSweeper"
+            >
+              <i class="fa fa-th" aria-hidden="true"></i>
+            </a>
+            <a
+              href="flappyBird.html"
+              id="bird-btn"
+              class="icon-button"
+              title="Flappy Bird"
+            >
+              <i class="fa-solid fa-kiwi-bird"></i>
+            </a>
+            <a
+              href="profile.html"
+              id="profile-btn"
+              class="icon-button"
+              title="Profile"
+            >
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <!--    <button class="icon-button" title="Grades">
+              </button>
+              <button class="icon-button" title="Users">
+              </button>
+              <button class="icon-button" title="Profile">
+              </button> -->
+            <button id="logout-btn" class="icon-button" title="Logout">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <div class="dash-container">
+          <section class="">
+            <h1>שמחים שחזרת <span class="fill_user"></span> !</h1>
+            <p class="curr_date"></p>
+           
+                  
+          </section>
+          <div
+            class="slick-container"
+            style="direction: ltr; text-align: left; position: relative"
+          >
+            <div
+              class="gallery-item flappy"
+             
+            >
+          <a href="flappyBird.html"><h2>הציפור המעופפת</h2></a>
+          </div>
+            <div
+              class="gallery-item minesweeper "
+             
+            >
+            <a href="minesweeper.html"><h2>שולה המוקשים </h2></a>
+          </div>
+          </div>
+        </section>
+        <div class="flip-container">
+          <div class="flip-box">
+            <a href="flappybird.html">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/flappyBird.png"
+                  alt="Bird"
+                />
+                <h2>הציפור המעופפת</h2>
+              </div>
+              <div class="flip-box-back">
+                <h2>הציפור המעופפת</h2>
+                <div class="grid">
+                  <span>מספר משחקים</span> <span class="g-data" id="num_games"></span>
+                  <span>ציון שיא </span> <span class="g-data" id="max_score"></span>
+                  <span> ציון משחק אחרון </span> <span class="g-data" id="last_score"></span>
+                  <span> תאריך משחק אחרון </span> <span class="g-data" id="bird_last_date"></span>
+                  <span>   רמה נוכחית </span> <span class="g-data" id="bird_level"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="flip-box">
+            <a href="minesweeper.html">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/minesweeper.jpg"
+                  alt="Bird"
+                />
+                <h2>שולה המוקשים </h2>
+              </div>
+              <div class="flip-box-back">
+                <h2>שולה המוקשים </h2>
+                <div class="grid">
+                  <span>מספר נצחונות </span> <span class="g-data" id="win_games"></span>
+                  <span>מספר הפסדים  </span> <span class="g-data" id="lose_score"></span>
+                  <span>  משחק אחרון </span> <span class="g-data" id="last_game"></span>
+                  <span> תאריך משחק אחרון </span> <span class="g-data" id="minesweeper_last_date"></span>
+                  <span>   רמה נוכחית </span> <span class="g-data" id="minesweeper_level"></span>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="flip-box ">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/cat.png"
+                  alt="Bird"
+                />
+                <h2>חתול רחוב   </h2>
+              </div>
+              <div class="flip-box-back soon">
+                <h2>חתול רחוב   </h2>
+             <div class="soon" >
+
+             </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box ">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/packman.png"
+                  alt="Bird"
+                />
+                <h2> פקמן   </h2>
+              </div>
+              <div class="flip-box-back soon">
+                <h2> פקמן   </h2>
+             <div class="soon" >
+
+             </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box ">
+          
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/mario.png"
+                  alt="Bird"
+                />
+                <h2> מריו הבנאי   </h2>
+              </div>
+              <div class="flip-box-back soon">
+                <h2> מריו הבנאי   </h2>
+             <div class="soon" >
+
+             </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box ">
+          
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="img/tictac.png"
+                  alt="Bird"
+                />
+                <h2> איקס עיגול    </h2>
+              </div>
+              <div class="flip-box-back soon">
+                <h2> איקס עיגול    </h2>
+
+             <div class="soon" >
+
+             </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <footer class="dash-footer">
+        <a href="app.html"  class="dash-footer__button icon-button" >
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+       
+        <p>משתמש: 
+          <span class="fill_user"></span>
+        </p>
+      </footer>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+
+    <script src="scripts/store.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/pages/app.js"></script>
+  </body>
+</html>

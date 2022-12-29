@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gesh-Games כניסת משתמשים</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+  </head>
+
+  <body>
+    <div id="main">
+      <section class="public">
+        <header>
+          <h1>כניסת משתמשים</h1>
+        </header>
+        <main class="login">
+          <form class="form" id="login-form">
+            <div class="errmsg hide" id="err"></div>
+            <label for="username">שם משתמש:</label
+            ><input
+              class="form__input"
+              type="text"
+              id="username"
+              autocomplete="off"
+              required=""
+              value=""
+            /><label for="password">סיסמא:</label
+            ><input
+              class="form__input"
+              type="password"
+              id="password"
+              required=""
+              value=""
+            /><button class="form__submit-button">כניסה</button
+            ><label for="remember" class="form__persist"
+            ><input
+              type="checkbox"
+              class="form__checkbox"
+              id="remember"
+              name="remember"
+              checked=""
+            />זכור אותי</label >
+          </form>
+        </main>
+        <footer class="public__footer">
+          <a href="login.html">כניסת משתמשים</a>
+          <a href="register.html">משתמש חדש </a>
+          <p>©2023 גאולה שושן</p>
+        </footer>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="scripts/store.js" ></script>
+    <script src="scripts/pages/login.js" ></script>
+
+  </body>
+</html>
