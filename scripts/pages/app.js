@@ -5,7 +5,7 @@ class App {
           autoplay: true,
          autoplaySpeed: 2000,
          dots: true,
-  infinite: true,
+        infinite: true,
       });
        const {bird, minesweeper} =store.getSettings()
        document.getElementById("num_games").innerText=bird.games
