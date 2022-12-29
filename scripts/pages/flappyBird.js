@@ -17,6 +17,25 @@ gradient.addColorStop("0.6", "#000");
 gradient.addColorStop("0.65", "#fff");
 
 
+const background = new Image()
+background.src=`img/${BackgroundOptions[store.getSettings().bird.bg]}`
+const BG ={
+  x1:0,
+  x2:canvas.width,
+  y:0,
+  width: canvas.width,
+  height:canvas.height
+}
+function handleBackground(){
+  if(BG.x1<= -BG.width + gamespeed) BG.x1 = BG.width;
+  else BG.x1 -=gamespeed
+  
+  if(BG.x2<= -BG.width + gamespeed) BG.x2 = BG.width;
+  else BG.x2 -=gamespeed
+
+  ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height)
+  ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height)
+}
 
 
 function animate() {
@@ -54,9 +73,6 @@ window.addEventListener("keyup", function (e) {
   if (e.code === "Space") spacePressed = false;
   bird.frameX = 0;
 });
-
-
-
 
 const bang = new Image();
 bang.src = "img/bang.png";
